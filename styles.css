@@ -51,18 +51,21 @@ main {
     margin-top: 0; /* Remove a margem superior padrão */
 }
 
+
+
 .featured-products h2 {
     margin: 0; /* Remove a margem padrão do título */
     font-size: 2.5rem; /* Aumenta o tamanho da fonte do título */
 }
 
 .featured-image {
-    width: 50%; /* Ajusta a largura da imagem para 50% da largura do contêiner */
-    max-width: 500px; /* Define uma largura máxima para a imagem */
+    width: 1000%; /* Ajusta a largura da imagem para 50% da largura do contêiner */
+    max-width: 800px; /* Define uma largura máxima para a imagem */
     height: auto; /* Mantém a proporção da altura da imagem */
     display: block; /* Garante que a imagem fique em um bloco */
     margin: 1rem auto; /* Centraliza a imagem horizontalmente com margem vertical */
 }
+
 
 .product-list {
     display: flex;
@@ -77,11 +80,18 @@ main {
     width: 200px;
     text-align: center;
     background-color: #333; /* Fundo escuro para contraste com o texto branco */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
 }
 
 .product-list .product img {
     max-width: 100%;
     height: auto;
+}
+
+.product{
+    align-items: center;
 }
 
 .widgets {
